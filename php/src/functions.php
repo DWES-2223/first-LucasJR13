@@ -48,3 +48,11 @@ function digits(int $num): int {
 function digitsN(int $num, int $post): int {
     return strval($num)[$post];
 }
+
+function peseta2euros(int $cantidad) : float {
+    return $cantidad / 166;
+}
+
+function euros2peseta(int $cantidad) : float {
+    return $cantidad * 166;
+}

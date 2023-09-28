@@ -1,6 +1,7 @@
 <?php
 include_once ("functions.php");
 
+/*
 echo esParell(4)?"SI":"NO";
 echo "<br>";
 
@@ -24,4 +25,7 @@ echo "<br>";
 
 echo digitsN(12, 0);
 echo "<br>";
+*/
+
+
 
