@@ -1,11 +1,4 @@
-tests/acceptance/ArraysCest.php:try233WorksTest
-tests/acceptance/ArraysCest.php:try234WorksTest
-tests/acceptance/ArraysCest.php:try235WorksTest
-tests/unit/FunctionsTest.php:test240arrayAleatori
-tests/unit/FunctionsTest.php:test241Concatenar
-tests/unit/FunctionsTest.php:test242Digits
-tests/unit/FunctionsTest.php:test242DigitsN
-tests/unit/FunctionsTest.php:test242LlevaDarrere
-tests/unit/FunctionsTest.php:test242LlevaDavant
-tests/unit/FunctionsTest.php:test243peseta2Euros
-tests/unit/FunctionsTest.php:test243euro2Pesetes
+tests/unit/ExamenCest.php:try270WorksTest
+tests/unit/ExamenCest.php:try271WorksTest
+tests/unit/ExamenCest.php:try272WorksTest
+tests/unit/ExamenTest.php:test273Jove
