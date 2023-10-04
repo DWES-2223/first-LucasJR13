@@ -21,7 +21,7 @@ th, td {
                 <?php for ($j=1; $j <= $files; $j++) {
                     if ($i%2 === 0){
                         if ($j%2 === 0){ ?>
-                            <td><?= chr(64+$i).$j ?></td>   
+                            <td><?= phpchr(64 + $i) . $j ?></td>
                         <?php } else { ?>
                             <td></td>
                         <?php }?>
@@ -29,7 +29,7 @@ th, td {
                         if ($j%2 === 0){ ?>
                             <td></td>   
                         <?php } else { ?>
-                            <td><?= chr(64+$i).$j ?></td>
+                            <td><?= phpchr(64 + $i) . $j ?></td>
                         <?php }?>
                     <?php } 
                 } ?>

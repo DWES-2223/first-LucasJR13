@@ -19,7 +19,7 @@ th, td {
             <?php for ($i=1; $i <= $columnes; $i++) { ?>
                 <tr>
                 <?php for ($j=1; $j <= $files; $j++) { ?>
-                    <td><?= chr(64+$i).$j ?></td>
+                    <td><?= phpchr(64 + $i) . $j ?></td>
                 <?php } ?>
                 </tr>
             <?php } ?>

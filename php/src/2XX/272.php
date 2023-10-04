@@ -1,6 +1,6 @@
 <?php
-include_once ("functions.php");
-$records = include_once ("atletes.php");
+include_once("functions.php");
+$records = include_once("atletes.php");
 
 echo "Record més antic: " . vell($records) . "<br>";
 echo "Club amb més títols: " . laureado(array_column_ext($records, "club", -1)) . "<br>";
@@ -15,4 +15,4 @@ if (array_key_exists($index, $records)) {
 }
 echo "Mes jove en aconsegir el record en la categoria " . $index . " y se llama: " . $nombreAtleta . " <br><br>";
 
-require_once ("270a.php");
+require_once("270a.php");

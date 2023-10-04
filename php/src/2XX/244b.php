@@ -2,7 +2,7 @@
 <html lang="es">
 
 <?php
-include_once ("functions.php");
+include_once("functions.php");
 $nombre = $_POST["nombre"]??null;
 $precio = $_POST["precio"]??null;
 $totalPrecio = 0;

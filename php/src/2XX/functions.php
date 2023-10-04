@@ -78,10 +78,9 @@ function vell(array $records){
     $category = "";
     $minorDate = "";
     foreach ($records as $record => $element) {
-        if(compara_fechas($element['data'],$minorDate)){
-            $minorDate = $element['data'];
+        if(compara_fechas($element["data"],$minorDate)){
+            $minorDate = $element["data"];
             $category = $record;
-
         }
     }
     return $category;

@@ -20,7 +20,7 @@ th, td {
                 <tr>
                 <?php for ($j=1; $j <= $files; $j++) {
                     if ($j === 1 || $i === 1){?>
-                        <td><?= chr(64+$i).$j ?></td>
+                        <td><?= phpchr(64 + $i) . $j ?></td>
                     <?php } else { ?>
                         <td></td>
                     <?php } 

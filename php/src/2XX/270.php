@@ -7,8 +7,8 @@
 <body>
 
 <?php
-$records = require_once ("atletes.php");
-require_once ("270a.php");
+$records = require_once("atletes.php");
+require_once("270a.php");
 ?>
 
 </body>

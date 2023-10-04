@@ -4,7 +4,7 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-$records = require_once ("atletes.php");
+$records = require_once("atletes.php");
 
 $prova = $_POST["prova"] ?? null;
 $marca = $_POST["marca"] ?? null;
@@ -31,7 +31,7 @@ if (isset($prova) && isset($marca) && isset($atleta) && isset($natalici) && isse
     $recordEncontrado["data"] = $data;
     $recordEncontrado["lloc"] = $lloc;
 
-    require_once ("270a.php");
+    require_once("270a.php");
 
     } else { ?>
         <p>La prova <?= $prova ?> no existeix en la llista de records oficials de la FEA</p>
@@ -40,5 +40,5 @@ if (isset($prova) && isset($marca) && isset($atleta) && isset($natalici) && isse
 </body>
 </html>
 <?php } else {
-    require_once ("271.html");
+    require_once("271.html");
 }
