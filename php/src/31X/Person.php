@@ -1,18 +1,12 @@
 <?php
-
-namespace Objetos;
-class Persona7
+abstract class Person
 {
-    protected string $nombre;
-    protected string $apellidos;
-    protected int $edad;
+    const LIMITE_EDAD = 66;
+    protected static $limite_edad = self::LIMITE_EDAD;
 
-    public function __construct(string $nombre, string $apellidos, int $edad)
-    {
-        $this->nombre = $nombre;
-        $this->apellidos = $apellidos;
-        $this->edad = $edad;
-    }
+    protected $nombre;
+    protected $apellidos;
+    protected $edad;
 
     public function getNombre(): string
     {
@@ -51,6 +45,18 @@ class Persona7
 
     function estaJubilado(): bool
     {
-        return $this->getEdad() > 65;
+        return $this->getEdad() > self::LIMITE_EDAD;
+    }
+
+    static function modificaLimite($nuevoLimite)
+    {
+        self::$limite_edad = $nuevoLimite;
+    }
+
+    abstract public static function toHtml(Person $person): string;
+
+    function __toString(): string
+    {
+        return "<p>" . $this->getNombre() . " " . $this->getApellidos() . "</p>";
     }
 }

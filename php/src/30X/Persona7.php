@@ -1,12 +1,17 @@
 <?php
-class Persona8 {
-    const LIMITE_EDAD = 66;
-    protected static $limite_edad = self::LIMITE_EDAD;
-    public function __construct(
-        protected string $nombre,
-        protected string $apellidos,
-        protected int $edad
-    ) {}
+
+class Persona7
+{
+    protected string $nombre;
+    protected string $apellidos;
+    protected int $edad;
+
+    public function __construct(string $nombre, string $apellidos, int $edad)
+    {
+        $this->nombre = $nombre;
+        $this->apellidos = $apellidos;
+        $this->edad = $edad;
+    }
 
     public function getNombre(): string
     {
@@ -40,15 +45,11 @@ class Persona8 {
 
     function getNombreCompleto(): string
     {
-        return $this->getNombre() . " " . $this->getApellidos();
+        return $this->getNombre() . " Persona7.php" . $this->getApellidos();
     }
 
     function estaJubilado(): bool
     {
-        return $this->getEdad() > self::LIMITE_EDAD;
-    }
-
-    static function modificaLimite($nuevoLimite){
-        self::$limite_edad = $nuevoLimite;
+        return $this->getEdad() > 65;
     }
 }
